@@ -1,0 +1,99 @@
+/* Globales */
+
+body {
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h3,
+p,
+.text-nav {
+    color: #D6C6C6;
+}
+
+/* Header */
+.banner {
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+}
+
+.contenido-banner {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 50%);
+    width: 100%;
+    height: 100%;
+    /* Para alinear horizontal y verticalmente tenemos que cambiar el display block que tiene
+    por defecto, a display flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-banner h1 {
+        font-size: 50px;
+    }
+}
+
+/* Navegacion */
+
+.text-nav:hover {
+    color: red;
+}
+
+/* Sobre Mi */
+
+.container {
+    margin-top: 30px;
+}
+
+.descripcion {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.descripcion-parrafo {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .descripcion-parrafo {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+    }
+}
+
+.foto {
+    width: 400px;
+}
+
+.foto-centro {
+    text-align: center;
+}
+
+/* Educacion */
+
+@media (min-width: 768px) {
+    .centrar {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Proyectos */
+
+.carousel-caption h5,
+.carousel-caption p {
+    font-size: 20px;
+    background-color: rgba(200, 200, 200, 100%);
+    color: black;
+}
